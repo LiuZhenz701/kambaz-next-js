@@ -1,11 +1,24 @@
 import "./index.css";
+import { Container } from "react-bootstrap";
+
 import ForegroundColors from "./ForegroundColors";
 import BackgroundColors from "./BackgroundColors";
 import Borders from "./Borders";
+import Paddings from "./Padding";
+import Margins from "./Margins";
+import Cornors from "./Corners";
+import Dimensions from "./Dimensions";
+import Positions from "./Positions";
+import Zindex from "./Zindex";
+import Float from "./Float";
+import GridLayout from "./GridLayout";
+import Flex from "./Flex";
+import ReactIconsSampler from "./ReactIcons";
+import BootstarpGrids from "./BootstrapGrids";
 
 export default function Lab2() {
   return (
-    <div id="wd-lab2">
+    <Container>
       <h2>Lab 2 - Cascading Style Sheets</h2>
       <h3>Styling with the STYLE attribute</h3>
 
@@ -70,6 +83,17 @@ export default function Lab2() {
       <ForegroundColors />
       <BackgroundColors />
       <Borders />
-    </div>
+      <Paddings />
+      <Margins />
+      <Cornors />
+      <Dimensions />
+      <Positions />
+      <Zindex />
+      <Float />
+      <GridLayout />
+      <Flex />
+      <ReactIconsSampler />
+      <BootstarpGrids />
+    </Container>
   );
 }
