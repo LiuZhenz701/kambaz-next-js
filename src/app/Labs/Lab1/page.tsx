@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 export default function Lab1() {
@@ -260,19 +262,23 @@ export default function Lab1() {
           <h5>Text boxes</h5>
           <label>Biography:</label>
           <br />
-          <textarea id="wd-textarea" cols={30} rows={10}>
-            Integer et mollis purus. Praesent non consequat nisi, eget consequat
-            sem. Integer ac sem vestibulum, iaculis nisi eu, vehicula tellus.
-            Praesent ac pulvinar quam. Pellentesque molestie neque ut justo
-            malesuada, eu interdum dolor consequat. In eu cursus est. In nisi
-            lectus, consectetur id hendrerit ac, interdum id lacus. Nam ornare
-            varius pharetra. Nam finibus, eros nec efficitur lobortis, urna ex
-            facilisis ligula, vel feugiat diam lacus posuere leo. Vestibulum
-            quam odio, tempor ut vestibulum nec, accumsan id diam. Class aptent
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Vestibulum nec urna eget nulla sollicitudin blandit.
-            Morbi laoreet gravida nunc in pharetra
-          </textarea>
+          <textarea
+            id="wd-textarea"
+            cols={30}
+            rows={10}
+            defaultValue={`
+              Integer et mollis purus. Praesent non consequat nisi, eget consequat
+              sem. Integer ac sem vestibulum, iaculis nisi eu, vehicula tellus.
+              Praesent ac pulvinar quam. Pellentesque molestie neque ut justo
+              malesuada, eu interdum dolor consequat. In eu cursus est. In nisi
+              lectus, consectetur id hendrerit ac, interdum id lacus. Nam ornare
+              varius pharetra. Nam finibus, eros nec efficitur lobortis, urna ex
+              facilisis ligula, vel feugiat diam lacus posuere leo. Vestibulum
+              quam odio, tempor ut vestibulum nec, accumsan id diam. Class aptent
+              taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos. Vestibulum nec urna eget nulla sollicitudin blandit.
+              Morbi laoreet gravida nunc in pharetra.`}
+          />
         </form>
       </div>
       {/* A button with interaction (alert) */}
@@ -332,13 +338,9 @@ export default function Lab1() {
       <label htmlFor="wd-select-many-genre"> Favorite movie genres: </label>
       <br />
       <select multiple id="wd-select-many-genre">
-        <option value="COMEDY" selected>
-          Comedy
-        </option>
+        <option defaultValue="COMEDY">Comedy</option>
         <option value="DRAMA"> Drama </option>
-        <option value="SCIFI" selected>
-          Science Fiction
-        </option>
+        <option defaultValue="SCIFI">Science Fiction</option>
         <option value="FANTASY"> Fantasy </option>
       </select>
       {/* Other fields */}
@@ -383,10 +385,7 @@ export default function Lab1() {
       to get dummy text
       <br />
       {/* This is anchor to github? */}
-      <a
-        href="https://github.com/LiuZhenz701/SpotifyDesktopLyrics"
-        id="wd-github"
-      >
+      <a href="https://github.com/LiuZhenz701" id="wd-github">
         github account
       </a>
     </div>
