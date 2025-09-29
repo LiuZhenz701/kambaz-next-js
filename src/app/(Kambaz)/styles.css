@@ -1,0 +1,61 @@
+/* ------------------ Kambaz Navigation Style ------------------ */
+/* Kambaz navigation bar */
+body {
+  margin: 0;
+  padding: 0;
+}
+body * {
+  font-family: Arial,
+    Helvetica, sans-serif;
+}
+/* Kambaz page dynamic position settings */
+@media (min-width: 768px) {
+  #wd-kambaz .wd-main-content-offset {
+    padding-left: 140px !important;
+  }
+}
+
+/* ------------------ Course Page Style ------------------ */
+/* Course page navigation bar*/
+.list-group.wd>.list-group-item.active {
+  color: black;
+  background-color: white;
+  border-left: 3px solid black !important;
+}
+
+/* ------------------ Course/Module Page Style ------------------ */
+/* Course page module bar*/
+.btn-secondary {
+  --bs-btn-color: #000 !important;
+  --bs-btn-bg: #c7cdd1 !important;
+  --bs-btn-border-color: #c7cdd1 !important;
+  --bs-btn-hover-color: #fff !important;
+}
+/* Module page Lesson title font color */
+.bg-secondary {
+  --bs-secondary-rgb: 199, 205, 209;
+}
+/* Module page Lesson title background color */
+.list-group-item {
+  --bs-list-group-border-color: gray;
+}
+/* Module page Lesson green horizontal slide */
+.wd-lesson {
+  border-left: 3px solid green !important;
+}
+
+/* ------------------ Course/Assignment Page Style ------------------ */
+/* The grade percentage bar border */
+.wd-border-percentage {
+  border: 1px solid; /* border size, display mode */
+  display: inline-block; /* fit into the line */
+  padding: 4px 12px; /* space inside */
+}
+/* The grade percentage bar corner rounding */
+.wd-rounded-corners-percentage {
+  border-radius: 9999px;
+}
+/* Shrinked column on Assignment Editor page */
+.field-narrow {
+  max-width: 560px;
+}

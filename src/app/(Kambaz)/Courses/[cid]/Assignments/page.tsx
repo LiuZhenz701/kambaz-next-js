@@ -1,54 +1,14 @@
-import Link from "next/link";
+import AssignmentControl from "./AssignmentControl";
+import AssignmentPage from "./AssignmentPage";
+
 export default function Assignments() {
   return (
     <div id="wd-assignments">
-      <input placeholder="Search for Assignments" id="wd-search-assignment" />
-      <button id="wd-add-assignment-group">+ Group</button>
-      <button id="wd-add-assignment">+ Assignment</button>
-      <h3 id="wd-assignments-title">
-        ASSIGNMENTS 40% of Total <button>+</button>{" "}
-      </h3>
-      <ul id="wd-assignment-list">
-        {/* Assignment 1 */}
-        <li className="wd-assignment-list-item">
-          <Link
-            href="/Courses/1234/Assignments/123"
-            className="wd-assignment-link"
-          >
-            A1 - ENV + HTML
-          </Link>{" "}
-          <div>
-            Multiple Modules | Not available until May 6 at 12:00 am | Due May
-            13 at 11:59pm | 100 pts
-          </div>
-        </li>
-        {/* Assignment 2 */}
-        <li className="wd-assignment-list-item">
-          <Link
-            href="/Courses/1234/Assignments/123"
-            className="wd-assignment-link"
-          >
-            A2 - CSS + BOOTSTRAP
-          </Link>{" "}
-          <div>
-            Multiple Modules | Not available until May 13 at 12:00 am | Due May
-            20 at 11:59pm | 100 pts
-          </div>
-        </li>
-        {/* Assignment 3 */}
-        <li className="wd-assignment-list-item">
-          <Link
-            href="/Courses/1234/Assignments/123"
-            className="wd-assignment-link"
-          >
-            A3 - JAVASCRIPT + REACT
-          </Link>{" "}
-          <div>
-            Multiple Modules | Not available until May 20 at 12:00 am | Due May
-            27 at 11:59pm | 100 pts
-          </div>
-        </li>
-      </ul>
+      {/* Top bar on the assignment page, contains search, add group & assignment */}
+      <AssignmentControl />
+
+      {/* The assignments on the page */}
+      <AssignmentPage />
     </div>
   );
 }

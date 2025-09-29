@@ -1,40 +1,65 @@
 import Link from "next/link";
+import { FormLabel, FormControl, FormSelect, Button } from "react-bootstrap";
+
 export default function Profile() {
   return (
     <div id="wd-profile-screen">
-      <h3>Profile</h3>
-      <input
-        defaultValue="alice"
+      {/* Profile title */}
+      <FormLabel style={{ fontSize: "36px", fontWeight: "bold" }}>
+        Profile
+      </FormLabel>
+      {/* Userame */}
+      <FormControl
+        defaultValue="zhenzhen"
         placeholder="username"
         className="wd-username"
       />
+      {/* Password */}
       <br />
-      <input
-        defaultValue="123"
+      <FormControl
+        defaultValue="142857"
         placeholder="password"
         type="password"
         className="wd-password"
       />
+      {/* First name & Last name */}
       <br />
-      <input defaultValue="Alice" placeholder="First Name" id="wd-firstname" />
+      <FormControl
+        defaultValue="Zhenzhen"
+        placeholder="First Name"
+        id="wd-firstname"
+      />
       <br />
-      <input
-        defaultValue="Wonderland"
+      <FormControl
+        defaultValue="Liu"
         placeholder="Last Name"
         id="wd-lastname"
       />
+
+      {/* Birth date */}
       <br />
-      <input defaultValue="2000-01-01" type="date" id="wd-dob" />
+      <FormControl defaultValue="2003-07-01" type="date" id="wd-dob" />
+      {/* Email Address */}
       <br />
-      <input defaultValue="alice@wonderland" type="email" id="wd-email" />
+      <FormControl
+        defaultValue="Liu.zhenz@northeastern.edu"
+        type="email"
+        id="wd-email"
+      />
       <br />
-      <select defaultValue="FACULTY" id="wd-role">
-        <option value="USER">User</option> <option value="ADMIN">Admin</option>
-        <option value="FACULTY">Faculty</option>{" "}
+      {/* Position */}
+      <FormSelect defaultValue="FACULTY" id="wd-role">
+        <option value="USER">User</option>
+        <option value="ADMIN">Admin</option>
+        <option value="FACULTY">Faculty</option>
         <option value="STUDENT">Student</option>
-      </select>
+      </FormSelect>
       <br />
-      <Link href="Signin"> Sign out </Link>
+      <Button variant="danger" size="lg">
+        <Link href="Signin" style={{ color: "white", textDecoration: "none" }}>
+          Sign out
+        </Link>
+      </Button>
     </div>
   );
 }
