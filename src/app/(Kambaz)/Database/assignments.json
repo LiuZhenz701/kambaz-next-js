@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "description": "This assignment focuses on applying the fundamental principles of rocket propulsion to practical problems. Students will analyze thrust generation, specific impulse, and nozzle efficiency for various propellant combinations. The task includes both theoretical calculations and short written explanations connecting propulsion performance to real-world launch systems. The goal is to demonstrate understanding of how design parameters affect engine performance and overall vehicle efficiency.",
+    "points": "100",
+    "dueDate": "2025-09-14",
+    "avaliableDate": "2025-09-07"
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "description": "This assignment focuses on applying the fundamental principles of rocket propulsion to practical problems. Students will analyze thrust generation, specific impulse, and nozzle efficiency for various propellant combinations. The task includes both theoretical calculations and short written explanations connecting propulsion performance to real-world launch systems. The goal is to demonstrate understanding of how design parameters affect engine performance and overall vehicle efficiency.",
+    "points": "20",
+    "dueDate": "2025-09-21",
+    "avaliableDate": "2025-09-14"
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "description": "In this project, students will design and analyze a rocket nozzle optimized for efficient thrust generation under specified operating conditions. The assignment involves calculating expansion ratios, evaluating nozzle geometries, and examining the effects of ambient pressure on performance. Students will apply isentropic flow relations and design principles to achieve maximum exhaust velocity and engine efficiency. A short report summarizing design choices, calculations, and performance outcomes is required to demonstrate mastery of rocket nozzle design fundamentals.",
+    "points": "100",
+    "dueDate": "2025-09-28",
+    "avaliableDate": "2025-09-21"
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "description": "This quiz evaluates students' understanding of the fundamental principles of aerodynamics. It covers topics such as airflow behavior around airfoils, lift and drag forces, pressure distribution, and the effects of angle of attack on performance. Students will apply Bernoulli’s principle, continuity equations, and aerodynamic coefficients to solve conceptual and numerical problems. The goal is to assess comprehension of aerodynamic theory and its application to aircraft and spacecraft design.",
+    "points": "5",
+    "dueDate": "2025-09-12",
+    "avaliableDate": "2025-09-04"
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "description": "In this assignment, students will analyze airflow characteristics over aerodynamic surfaces using fundamental fluid dynamics principles. The task includes evaluating velocity fields, pressure distributions, and boundary layer behavior under various flow conditions. Students will apply the continuity and Navier–Stokes equations to interpret laminar and turbulent flow regimes. The objective is to develop a quantitative understanding of how fluid flow influences lift, drag, and overall aerodynamic performance.",
+    "points": "20",
+    "dueDate": "2025-09-23",
+    "avaliableDate": "2025-09-16"
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "description": "This assignment focuses on analyzing aerodynamic heating effects that occur during high-speed or re-entry flight. Students will examine the relationship between velocity, air density, and surface temperature rise using energy balance and heat transfer principles. The task includes estimating convective heat flux, evaluating thermal protection materials, and discussing design strategies to minimize structural damage caused by extreme temperatures. The objective is to deepen understanding of thermal challenges in aerodynamic design and spacecraft re-entry systems.",
+    "points": "20",
+    "dueDate": "2025-10-14",
+    "avaliableDate": "2025-10-01"
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "description": "This assignment focuses on the structural design aspects of spacecraft systems. Students will analyze load paths, material selection, and stress distribution in primary and secondary structures under launch and orbital conditions. The task includes performing basic calculations of structural strength and stiffness, evaluating lightweight design trade-offs, and considering safety margins for extreme environments. The goal is to demonstrate an understanding of how mechanical design decisions affect the reliability and performance of spacecraft structures.",
+    "points": "50",
+    "dueDate": "2025-09-26",
+    "avaliableDate": "2025-09-05"
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "description": "This assignment introduces students to the fundamental principles of orbital mechanics used in spacecraft design and mission planning. Students will perform calculations involving orbital parameters, velocity changes, and transfer orbits such as Hohmann and bi elliptic transfers. The task includes analyzing gravitational effects, orbital periods, and altitude variations to predict spacecraft motion accurately. The goal is to develop proficiency in applying mathematical models to real world orbital scenarios and understand how orbital dynamics influence spacecraft design decisions.",
+    "points": "15",
+    "dueDate": "2025-10-15",
+    "avaliableDate": "2025-09-26"
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "description": "This exam evaluates students understanding of systems engineering principles as applied to spacecraft design. It covers topics such as subsystem integration, requirements analysis, risk management, and system level trade studies. Students will demonstrate their ability to coordinate mechanical, electrical, thermal, and communication subsystems into a unified spacecraft design. The goal is to assess the students ability to apply systems thinking to complex aerospace engineering problems and ensure mission success through proper design planning and verification.",
+    "points": "200",
+    "dueDate": "2025-10-16",
+    "avaliableDate": "2025-10-15"
+  }
+]

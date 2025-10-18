@@ -1,3 +1,6 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import {
   FormLabel,
   FormControl,
@@ -8,19 +11,26 @@ import {
   Button,
 } from "react-bootstrap";
 
+import * as db from "../../../../Database";
+import Link from "next/link";
+
 export default function AssignmentEditor() {
+  const { cid, aid } = useParams();
+  const assignments = db.assignments;
+  const assignment = assignments.find((a) => a._id === aid);
+
   return (
     <div id="wd-assignments-editor">
       {/* Assignment Name & Description */}
       <Row>
         <Col xs={12} md={{ span: 5, offset: 2 }} className="field-wide">
           <FormLabel id="wd-name">Assignment Name</FormLabel>
-          <FormControl placeholder="A1" />
+          <FormControl defaultValue={assignment?.title} />
           <br />
           <FormControl
             as="textarea"
             rows={10}
-            placeholder="The assignment is available online ..."
+            defaultValue={assignment?.description}
           />
         </Col>
       </Row>
@@ -34,7 +44,11 @@ export default function AssignmentEditor() {
           </FormLabel>
         </Col>
         <Col xs={12} md={9} className="field-narrow">
-          <FormControl id="wd-points" type="number" placeholder={"100"} />
+          <FormControl
+            id="wd-points"
+            type="number"
+            defaultValue={assignment?.points}
+          />
         </Col>
       </Row>
 
@@ -144,7 +158,11 @@ export default function AssignmentEditor() {
             <FormLabel style={{ fontSize: 18 }}>
               <b>Due</b>
             </FormLabel>
-            <FormControl type="date" id="wd-due-date" />
+            <FormControl
+              type="date"
+              id="wd-due-date"
+              defaultValue={assignment?.dueDate}
+            />
 
             <br />
             <br />
@@ -153,11 +171,19 @@ export default function AssignmentEditor() {
                 <FormLabel htmlFor="wd-available-from">
                   Available from
                 </FormLabel>
-                <FormControl id="wd-available-from" type="date" />
+                <FormControl
+                  id="wd-available-from"
+                  type="date"
+                  defaultValue={assignment?.avaliableDate}
+                />
               </Col>
               <Col>
                 <FormLabel htmlFor="wd-available-until">Until</FormLabel>
-                <FormControl id="wd-available-until" type="date" />
+                <FormControl
+                  id="wd-available-until"
+                  type="date"
+                  defaultValue={assignment?.dueDate}
+                />
               </Col>
             </Row>
           </div>
@@ -170,10 +196,22 @@ export default function AssignmentEditor() {
         style={{ marginTop: 8, display: "flex", justifyContent: "flex-end" }}
       >
         <Button variant="secondary" size="lg" className="me-1">
-          Cancel
+          <Link
+            href={`/Courses/${cid}/Assignments`}
+            className="wd-assignment-link"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            Cancel
+          </Link>
         </Button>
         <Button variant="danger" size="lg" className="me-1">
-          Save
+          <Link
+            href={`/Courses/${cid}/Assignments`}
+            className="wd-assignment-link"
+            style={{ color: "black", textDecoration: "none" }}
+          >
+            Save
+          </Link>
         </Button>
       </div>
     </div>
